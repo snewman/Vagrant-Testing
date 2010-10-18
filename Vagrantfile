@@ -61,5 +61,6 @@ Vagrant::Config.run do |config|
   # Tell chef what recipe to run. In this case, the `vagrant_main` recipe
   # does all the magic.
   config.chef.add_recipe("vagrant_main")
+  config.vm.forward_port("web", 80, 4567)
 
 end
