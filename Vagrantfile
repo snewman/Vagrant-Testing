@@ -49,8 +49,17 @@ Vagrant::Config.run do |config|
   # on how your Chef server is configured.
   # config.chef.validation_client_name = "organization-validator"
 
-Vagrant::Config.run do |config|
+
   config.vm.box = "lucid32"
-end
+
+# Enable the chef solo provisioner
+  config.vm.provisioner = :chef_solo
+
+  # Grab the cookbooks from the Vagrant files
+  config.chef.recipe_url = "http://files.vagrantup.com/getting_started/cookbooks.tar.gz"
+
+  # Tell chef what recipe to run. In this case, the `vagrant_main` recipe
+  # does all the magic.
+  config.chef.add_recipe("vagrant_main")
 
 end
