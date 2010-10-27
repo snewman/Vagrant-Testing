@@ -1,0 +1,275 @@
+[0K[web2] Provisioning enabled with Vagrant::Provisioners::ChefSolo...
+[0K[web2] Importing base box 'lucid32'...
+[0KProgress: 0%[0KProgress: 9%[0KProgress: 28%[0KProgress: 38%[0KProgress: 39%[0KProgress: 43%[0KProgress: 44%[0KProgress: 48%[0KProgress: 53%[0KProgress: 56%[0KProgress: 59%[0KProgress: 63%[0KProgress: 73%[0KProgress: 78%[0KProgress: 83%[0KProgress: 99%[0K[web2] Matching MAC address for NAT networking...
+[33m[0K[web2] The guest additions on this VM do not match the install version of
+VirtualBox! This may cause things such as forwarded ports, shared
+folders, and more to not work properly. If any of those things fail on
+this machine, please update the guest additions and repackage the
+box.
+
+Guest Additions Version: 3.2.8
+VirtualBox Version: 3.2.10[0m
+[0K[web2] Running any VM customizations...
+[0K[web2] Clearing any previously set forwarded ports...
+[0K[web2] Forwarding ports...
+[0K[web2] -- http: 80 => 8081 (adapter 1)
+[0K[web2] -- ssh: 22 => 2222 (adapter 1)
+[0K[web2] Creating shared folders metadata...
+[0K[web2] Booting VM...
+[0K[web2] Waiting for VM to boot. This can take a few minutes.
+[0K[web2] VM booted and ready for use!
+[0K[web2] Mounting shared folders...
+[0K[web2] -- v-csc-0: /tmp/vagrant-chef/cookbooks-0
+[0K[web2] -- v-root: /vagrant
+[0K[web2] Beginning provisioning process...
+[0K[web2] Generating chef JSON and uploading...
+[0K[web2] Running chef-solo...
+[0K[web2] [Wed, 20 Oct 2010 12:25:42 -0700] INFO: Setting the run_list to ["recipe[vagrant_main]"] from JSON
+[Wed, 20 Oct 2010 12:25:42 -0700] INFO: Starting Chef Run (Version 0.9.8)
+: stdout
+[0K[web2] [Wed, 20 Oct 2010 12:25:48 -0700] INFO: Ran execute[apt-get update] successfully
+[Wed, 20 Oct 2010 12:25:48 -0700] INFO: Creating directory[/var/cache/local] at /var/cache/local
+[Wed, 20 Oct 2010 12:25:48 -0700] INFO: Setting owner to 0 for directory[/var/cache/local]
+[Wed, 20 Oct 2010 12:25:48 -0700] INFO: Setting group to 0 for directory[/var/cache/local]
+[Wed, 20 Oct 2010 12:25:48 -0700] INFO: Setting mode to 755 for directory[/var/cache/local]
+[Wed, 20 Oct 2010 12:25:48 -0700] INFO: Creating directory[/var/cache/local/preseeding] at /var/cache/local/preseeding
+[Wed, 20 Oct 2010 12:25:48 -0700] INFO: Setting owner to 0 for directory[/var/cache/local/preseeding]
+[Wed, 20 Oct 2010 12:25:48 -0700] INFO: Setting group to 0 for directory[/var/cache/local/preseeding]
+[Wed, 20 Oct 2010 12:25:48 -0700] INFO: Setting mode to 755 for directory[/var/cache/local/preseeding]
+: stdout
+[0K[web2] [Wed, 20 Oct 2010 12:25:49 -0700] INFO: Installing package[apache2] version 2.2.14-5ubuntu8.3
+: stdout
+[0K[web2] [Wed, 20 Oct 2010 12:26:23 -0700] INFO: Creating directory[/etc/apache2/ssl] at /etc/apache2/ssl
+[Wed, 20 Oct 2010 12:26:23 -0700] INFO: Setting owner to 0 for directory[/etc/apache2/ssl]
+[Wed, 20 Oct 2010 12:26:23 -0700] INFO: Setting group to 0 for directory[/etc/apache2/ssl]
+[Wed, 20 Oct 2010 12:26:23 -0700] INFO: Setting mode to 755 for directory[/etc/apache2/ssl]
+[Wed, 20 Oct 2010 12:26:23 -0700] INFO: Writing updated content for template[apache2.conf] to /etc/apache2/apache2.conf
+[Wed, 20 Oct 2010 12:26:23 -0700] INFO: Backing up template[apache2.conf] to /var/chef/backup/etc/apache2/apache2.conf.chef-20101020122623
+[Wed, 20 Oct 2010 12:26:23 -0700] INFO: Writing updated content for template[security] to /etc/apache2/conf.d/security
+[Wed, 20 Oct 2010 12:26:23 -0700] INFO: Writing updated content for template[/etc/apache2/ports.conf] to /etc/apache2/ports.conf
+[Wed, 20 Oct 2010 12:26:23 -0700] INFO: Backing up template[/etc/apache2/ports.conf] to /var/chef/backup/etc/apache2/ports.conf.chef-20101020122623
+[Wed, 20 Oct 2010 12:26:23 -0700] INFO: Writing updated content for template[/etc/apache2/sites-available/default] to /etc/apache2/sites-available/default
+[Wed, 20 Oct 2010 12:26:23 -0700] INFO: Backing up template[/etc/apache2/sites-available/default] to /var/chef/backup/etc/apache2/sites-available/default.chef-20101020122623
+[Wed, 20 Oct 2010 12:26:23 -0700] INFO: Writing updated content for template[/etc/apache2/mods-available/alias.conf] to /etc/apache2/mods-available/alias.conf
+[Wed, 20 Oct 2010 12:26:23 -0700] INFO: Backing up template[/etc/apache2/mods-available/alias.conf] to /var/chef/backup/etc/apache2/mods-available/alias.conf.chef-20101020122623
+[Wed, 20 Oct 2010 12:26:23 -0700] INFO: Writing updated content for template[/etc/apache2/mods-available/mime.conf] to /etc/apache2/mods-available/mime.conf
+[Wed, 20 Oct 2010 12:26:23 -0700] INFO: Backing up template[/etc/apache2/mods-available/mime.conf] to /var/chef/backup/etc/apache2/mods-available/mime.conf.chef-20101020122623
+[Wed, 20 Oct 2010 12:26:23 -0700] INFO: Writing updated content for template[/etc/apache2/mods-available/setenvif.conf] to /etc/apache2/mods-available/setenvif.conf
+[Wed, 20 Oct 2010 12:26:23 -0700] INFO: Backing up template[/etc/apache2/mods-available/setenvif.conf] to /var/chef/backup/etc/apache2/mods-available/setenvif.conf.chef-20101020122623
+: stdout
+[0K[web2] [Wed, 20 Oct 2010 12:26:24 -0700] INFO: Ran execute[disable-default-site] successfully
+: stdout
+[0K[web2] [Wed, 20 Oct 2010 12:26:24 -0700] INFO: Ran execute[a2enmod rewrite] successfully
+[Wed, 20 Oct 2010 12:26:24 -0700] INFO: Writing updated content for template[/etc/apache2/mods-available/deflate.conf] to /etc/apache2/mods-available/deflate.conf
+[Wed, 20 Oct 2010 12:26:24 -0700] INFO: Backing up template[/etc/apache2/mods-available/deflate.conf] to /var/chef/backup/etc/apache2/mods-available/deflate.conf.chef-20101020122624
+: stdout
+[0K[web2] [Wed, 20 Oct 2010 12:26:24 -0700] INFO: Ran execute[a2enmod headers] successfully
+[Wed, 20 Oct 2010 12:26:24 -0700] INFO: Writing updated content for template[/etc/apache2/sites-available/project.conf] to /etc/apache2/sites-available/project.conf
+: stdout
+[0K[web2] [Wed, 20 Oct 2010 12:26:24 -0700] INFO: Ran execute[a2ensite project.conf] successfully
+: stdout
+[0K[web2] [Wed, 20 Oct 2010 12:26:25 -0700] INFO: service[apache2]: restarted successfully
+[Wed, 20 Oct 2010 12:26:25 -0700] INFO: template[apache2.conf] sending restart action to service[apache2] (delayed)
+[Wed, 20 Oct 2010 12:26:25 -0700] INFO: template[security] not sending restart action to service[apache2] (delayed), as it's already been queued
+[Wed, 20 Oct 2010 12:26:25 -0700] INFO: template[/etc/apache2/ports.conf] not sending restart action to service[apache2] (delayed), as it's already been queued
+[Wed, 20 Oct 2010 12:26:25 -0700] INFO: template[/etc/apache2/sites-available/default] not sending restart action to service[apache2] (delayed), as it's already been queued
+[Wed, 20 Oct 2010 12:26:25 -0700] INFO: template[/etc/apache2/mods-available/alias.conf] not sending restart action to service[apache2] (delayed), as it's already been queued
+[Wed, 20 Oct 2010 12:26:25 -0700] INFO: template[/etc/apache2/mods-available/mime.conf] not sending restart action to service[apache2] (delayed), as it's already been queued
+[Wed, 20 Oct 2010 12:26:25 -0700] INFO: template[/etc/apache2/mods-available/setenvif.conf] not sending restart action to service[apache2] (delayed), as it's already been queued
+: stdout
+[0K[web2] [Wed, 20 Oct 2010 12:26:26 -0700] INFO: service[apache2]: reloaded successfully
+[Wed, 20 Oct 2010 12:26:26 -0700] INFO: execute[disable-default-site] sending reload action to service[apache2] (delayed)
+: stdout
+[0K[web2] [Wed, 20 Oct 2010 12:26:28 -0700] INFO: service[apache2]: restarted successfully
+[Wed, 20 Oct 2010 12:26:28 -0700] INFO: execute[a2enmod rewrite] sending restart action to service[apache2] (delayed)
+[Wed, 20 Oct 2010 12:26:28 -0700] INFO: template[/etc/apache2/mods-available/deflate.conf] not sending restart action to service[apache2] (delayed), as it's already been queued
+[Wed, 20 Oct 2010 12:26:28 -0700] INFO: execute[a2enmod headers] not sending restart action to service[apache2] (delayed), as it's already been queued
+[Wed, 20 Oct 2010 12:26:28 -0700] INFO: execute[a2ensite project.conf] not sending restart action to service[apache2] (delayed), as it's already been queued
+[Wed, 20 Oct 2010 12:26:28 -0700] INFO: Chef Run complete in 45.395123 seconds
+[Wed, 20 Oct 2010 12:26:28 -0700] INFO: Running report handlers
+[Wed, 20 Oct 2010 12:26:28 -0700] INFO: Report handlers complete
+: stdout
+[0K[db] Fixed port collision 'ssh'. Now on port 2200.
+[0K[db] Provisioning enabled with Vagrant::Provisioners::ChefSolo...
+[0K[db] Importing base box 'lucid32'...
+[0KProgress: 0%[0KProgress: 4%[0KProgress: 9%[0KProgress: 28%[0KProgress: 38%[0KProgress: 39%[0KProgress: 43%[0KProgress: 44%[0KProgress: 48%[0KProgress: 53%[0KProgress: 56%[0KProgress: 59%[0KProgress: 63%[0KProgress: 68%[0KProgress: 73%[0KProgress: 78%[0KProgress: 79%[0KProgress: 88%[0KProgress: 99%[0K[db] Matching MAC address for NAT networking...
+[33m[0K[db] The guest additions on this VM do not match the install version of
+VirtualBox! This may cause things such as forwarded ports, shared
+folders, and more to not work properly. If any of those things fail on
+this machine, please update the guest additions and repackage the
+box.
+
+Guest Additions Version: 3.2.8
+VirtualBox Version: 3.2.10[0m
+[0K[db] Running any VM customizations...
+[0K[db] Clearing any previously set forwarded ports...
+[0K[db] Forwarding ports...
+[0K[db] -- db: 3306 => 3306 (adapter 1)
+[0K[db] -- ssh: 22 => 2200 (adapter 1)
+[0K[db] Creating shared folders metadata...
+[0K[db] Booting VM...
+[0K[db] Waiting for VM to boot. This can take a few minutes.
+[0K[db] VM booted and ready for use!
+[0K[db] Mounting shared folders...
+[0K[db] -- v-csc-0: /tmp/vagrant-chef/cookbooks-0
+[0K[db] -- v-root: /vagrant
+[0K[db] Beginning provisioning process...
+[0K[db] Generating chef JSON and uploading...
+[0K[db] Running chef-solo...
+[0K[db] [Wed, 20 Oct 2010 12:29:20 -0700] INFO: Setting the run_list to ["recipe[vagrant_main]"] from JSON
+[Wed, 20 Oct 2010 12:29:20 -0700] INFO: Starting Chef Run (Version 0.9.8)
+: stdout
+[0K[db] [Wed, 20 Oct 2010 12:29:28 -0700] INFO: Ran execute[apt-get update] successfully
+[Wed, 20 Oct 2010 12:29:28 -0700] INFO: Creating directory[/var/cache/local] at /var/cache/local
+[Wed, 20 Oct 2010 12:29:28 -0700] INFO: Setting owner to 0 for directory[/var/cache/local]
+[Wed, 20 Oct 2010 12:29:28 -0700] INFO: Setting group to 0 for directory[/var/cache/local]
+[Wed, 20 Oct 2010 12:29:28 -0700] INFO: Setting mode to 755 for directory[/var/cache/local]
+[Wed, 20 Oct 2010 12:29:28 -0700] INFO: Creating directory[/var/cache/local/preseeding] at /var/cache/local/preseeding
+[Wed, 20 Oct 2010 12:29:28 -0700] INFO: Setting owner to 0 for directory[/var/cache/local/preseeding]
+[Wed, 20 Oct 2010 12:29:28 -0700] INFO: Setting group to 0 for directory[/var/cache/local/preseeding]
+[Wed, 20 Oct 2010 12:29:28 -0700] INFO: Setting mode to 755 for directory[/var/cache/local/preseeding]
+: stdout
+[0K[db] [Wed, 20 Oct 2010 12:29:28 -0700] INFO: Installing package[apache2] version 2.2.14-5ubuntu8.3
+: stdout
+[0K[db] [Wed, 20 Oct 2010 12:30:04 -0700] INFO: Creating directory[/etc/apache2/ssl] at /etc/apache2/ssl
+[Wed, 20 Oct 2010 12:30:04 -0700] INFO: Setting owner to 0 for directory[/etc/apache2/ssl]
+[Wed, 20 Oct 2010 12:30:04 -0700] INFO: Setting group to 0 for directory[/etc/apache2/ssl]
+[Wed, 20 Oct 2010 12:30:04 -0700] INFO: Setting mode to 755 for directory[/etc/apache2/ssl]
+[Wed, 20 Oct 2010 12:30:05 -0700] INFO: Writing updated content for template[apache2.conf] to /etc/apache2/apache2.conf
+[Wed, 20 Oct 2010 12:30:05 -0700] INFO: Backing up template[apache2.conf] to /var/chef/backup/etc/apache2/apache2.conf.chef-20101020123005
+[Wed, 20 Oct 2010 12:30:05 -0700] INFO: Writing updated content for template[security] to /etc/apache2/conf.d/security
+[Wed, 20 Oct 2010 12:30:05 -0700] INFO: Writing updated content for template[/etc/apache2/ports.conf] to /etc/apache2/ports.conf
+[Wed, 20 Oct 2010 12:30:05 -0700] INFO: Backing up template[/etc/apache2/ports.conf] to /var/chef/backup/etc/apache2/ports.conf.chef-20101020123005
+[Wed, 20 Oct 2010 12:30:05 -0700] INFO: Writing updated content for template[/etc/apache2/sites-available/default] to /etc/apache2/sites-available/default
+[Wed, 20 Oct 2010 12:30:05 -0700] INFO: Backing up template[/etc/apache2/sites-available/default] to /var/chef/backup/etc/apache2/sites-available/default.chef-20101020123005
+[Wed, 20 Oct 2010 12:30:05 -0700] INFO: Writing updated content for template[/etc/apache2/mods-available/alias.conf] to /etc/apache2/mods-available/alias.conf
+[Wed, 20 Oct 2010 12:30:05 -0700] INFO: Backing up template[/etc/apache2/mods-available/alias.conf] to /var/chef/backup/etc/apache2/mods-available/alias.conf.chef-20101020123005
+[Wed, 20 Oct 2010 12:30:05 -0700] INFO: Writing updated content for template[/etc/apache2/mods-available/mime.conf] to /etc/apache2/mods-available/mime.conf
+[Wed, 20 Oct 2010 12:30:05 -0700] INFO: Backing up template[/etc/apache2/mods-available/mime.conf] to /var/chef/backup/etc/apache2/mods-available/mime.conf.chef-20101020123005
+[Wed, 20 Oct 2010 12:30:05 -0700] INFO: Writing updated content for template[/etc/apache2/mods-available/setenvif.conf] to /etc/apache2/mods-available/setenvif.conf
+[Wed, 20 Oct 2010 12:30:05 -0700] INFO: Backing up template[/etc/apache2/mods-available/setenvif.conf] to /var/chef/backup/etc/apache2/mods-available/setenvif.conf.chef-20101020123005
+: stdout
+[0K[db] [Wed, 20 Oct 2010 12:30:05 -0700] INFO: Ran execute[disable-default-site] successfully
+: stdout
+[0K[db] [Wed, 20 Oct 2010 12:30:05 -0700] INFO: Ran execute[a2enmod rewrite] successfully
+[Wed, 20 Oct 2010 12:30:05 -0700] INFO: Writing updated content for template[/etc/apache2/mods-available/deflate.conf] to /etc/apache2/mods-available/deflate.conf
+[Wed, 20 Oct 2010 12:30:05 -0700] INFO: Backing up template[/etc/apache2/mods-available/deflate.conf] to /var/chef/backup/etc/apache2/mods-available/deflate.conf.chef-20101020123005
+: stdout
+[0K[db] [Wed, 20 Oct 2010 12:30:05 -0700] INFO: Ran execute[a2enmod headers] successfully
+[Wed, 20 Oct 2010 12:30:05 -0700] INFO: Writing updated content for template[/etc/apache2/sites-available/project.conf] to /etc/apache2/sites-available/project.conf
+: stdout
+[0K[db] [Wed, 20 Oct 2010 12:30:05 -0700] INFO: Ran execute[a2ensite project.conf] successfully
+: stdout
+[0K[db] [Wed, 20 Oct 2010 12:30:07 -0700] INFO: service[apache2]: restarted successfully
+[Wed, 20 Oct 2010 12:30:07 -0700] INFO: template[apache2.conf] sending restart action to service[apache2] (delayed)
+[Wed, 20 Oct 2010 12:30:07 -0700] INFO: template[security] not sending restart action to service[apache2] (delayed), as it's already been queued
+[Wed, 20 Oct 2010 12:30:07 -0700] INFO: template[/etc/apache2/ports.conf] not sending restart action to service[apache2] (delayed), as it's already been queued
+[Wed, 20 Oct 2010 12:30:07 -0700] INFO: template[/etc/apache2/sites-available/default] not sending restart action to service[apache2] (delayed), as it's already been queued
+[Wed, 20 Oct 2010 12:30:07 -0700] INFO: template[/etc/apache2/mods-available/alias.conf] not sending restart action to service[apache2] (delayed), as it's already been queued
+[Wed, 20 Oct 2010 12:30:07 -0700] INFO: template[/etc/apache2/mods-available/mime.conf] not sending restart action to service[apache2] (delayed), as it's already been queued
+[Wed, 20 Oct 2010 12:30:07 -0700] INFO: template[/etc/apache2/mods-available/setenvif.conf] not sending restart action to service[apache2] (delayed), as it's already been queued
+: stdout
+[0K[db] [Wed, 20 Oct 2010 12:30:08 -0700] INFO: service[apache2]: reloaded successfully
+[Wed, 20 Oct 2010 12:30:08 -0700] INFO: execute[disable-default-site] sending reload action to service[apache2] (delayed)
+: stdout
+[0K[db] [Wed, 20 Oct 2010 12:30:09 -0700] INFO: service[apache2]: restarted successfully
+[Wed, 20 Oct 2010 12:30:09 -0700] INFO: execute[a2enmod rewrite] sending restart action to service[apache2] (delayed)
+[Wed, 20 Oct 2010 12:30:09 -0700] INFO: template[/etc/apache2/mods-available/deflate.conf] not sending restart action to service[apache2] (delayed), as it's already been queued
+[Wed, 20 Oct 2010 12:30:09 -0700] INFO: execute[a2enmod headers] not sending restart action to service[apache2] (delayed), as it's already been queued
+[Wed, 20 Oct 2010 12:30:09 -0700] INFO: execute[a2ensite project.conf] not sending restart action to service[apache2] (delayed), as it's already been queued
+[Wed, 20 Oct 2010 12:30:09 -0700] INFO: Chef Run complete in 48.986594 seconds
+[Wed, 20 Oct 2010 12:30:09 -0700] INFO: Running report handlers
+[Wed, 20 Oct 2010 12:30:09 -0700] INFO: Report handlers complete
+: stdout
+[0K[web1] Fixed port collision 'ssh'. Now on port 2201.
+[0K[web1] Provisioning enabled with Vagrant::Provisioners::ChefSolo...
+[0K[web1] Importing base box 'lucid32'...
+[0KProgress: 0%[0KProgress: 9%[0KProgress: 38%[0KProgress: 39%[0KProgress: 43%[0KProgress: 44%[0KProgress: 53%[0KProgress: 56%[0KProgress: 59%[0KProgress: 63%[0KProgress: 64%[0KProgress: 68%[0KProgress: 78%[0KProgress: 83%[0KProgress: 99%[0K[web1] Matching MAC address for NAT networking...
+[33m[0K[web1] The guest additions on this VM do not match the install version of
+VirtualBox! This may cause things such as forwarded ports, shared
+folders, and more to not work properly. If any of those things fail on
+this machine, please update the guest additions and repackage the
+box.
+
+Guest Additions Version: 3.2.8
+VirtualBox Version: 3.2.10[0m
+[0K[web1] Running any VM customizations...
+[0K[web1] Clearing any previously set forwarded ports...
+[0K[web1] Forwarding ports...
+[0K[web1] -- http: 80 => 8080 (adapter 1)
+[0K[web1] -- ssh: 22 => 2201 (adapter 1)
+[0K[web1] Creating shared folders metadata...
+[0K[web1] Booting VM...
+[0K[web1] Waiting for VM to boot. This can take a few minutes.
+[0K[web1] VM booted and ready for use!
+[0K[web1] Mounting shared folders...
+[0K[web1] -- v-csc-0: /tmp/vagrant-chef/cookbooks-0
+[0K[web1] -- v-root: /vagrant
+[0K[web1] Beginning provisioning process...
+[0K[web1] Generating chef JSON and uploading...
+[0K[web1] Running chef-solo...
+[0K[web1] [Wed, 20 Oct 2010 12:32:59 -0700] INFO: Setting the run_list to ["recipe[vagrant_main]"] from JSON
+[Wed, 20 Oct 2010 12:32:59 -0700] INFO: Starting Chef Run (Version 0.9.8)
+: stdout
+[0K[web1] [Wed, 20 Oct 2010 12:33:06 -0700] INFO: Ran execute[apt-get update] successfully
+[Wed, 20 Oct 2010 12:33:07 -0700] INFO: Creating directory[/var/cache/local] at /var/cache/local
+[Wed, 20 Oct 2010 12:33:07 -0700] INFO: Setting owner to 0 for directory[/var/cache/local]
+[Wed, 20 Oct 2010 12:33:07 -0700] INFO: Setting group to 0 for directory[/var/cache/local]
+[Wed, 20 Oct 2010 12:33:07 -0700] INFO: Setting mode to 755 for directory[/var/cache/local]
+[Wed, 20 Oct 2010 12:33:07 -0700] INFO: Creating directory[/var/cache/local/preseeding] at /var/cache/local/preseeding
+[Wed, 20 Oct 2010 12:33:07 -0700] INFO: Setting owner to 0 for directory[/var/cache/local/preseeding]
+[Wed, 20 Oct 2010 12:33:07 -0700] INFO: Setting group to 0 for directory[/var/cache/local/preseeding]
+[Wed, 20 Oct 2010 12:33:07 -0700] INFO: Setting mode to 755 for directory[/var/cache/local/preseeding]
+: stdout
+[0K[web1] [Wed, 20 Oct 2010 12:33:07 -0700] INFO: Installing package[apache2] version 2.2.14-5ubuntu8.3
+: stdout
+[0K[web1] [Wed, 20 Oct 2010 12:33:41 -0700] INFO: Creating directory[/etc/apache2/ssl] at /etc/apache2/ssl
+[Wed, 20 Oct 2010 12:33:41 -0700] INFO: Setting owner to 0 for directory[/etc/apache2/ssl]
+[Wed, 20 Oct 2010 12:33:41 -0700] INFO: Setting group to 0 for directory[/etc/apache2/ssl]
+[Wed, 20 Oct 2010 12:33:41 -0700] INFO: Setting mode to 755 for directory[/etc/apache2/ssl]
+[Wed, 20 Oct 2010 12:33:41 -0700] INFO: Writing updated content for template[apache2.conf] to /etc/apache2/apache2.conf
+[Wed, 20 Oct 2010 12:33:41 -0700] INFO: Backing up template[apache2.conf] to /var/chef/backup/etc/apache2/apache2.conf.chef-20101020123341
+[Wed, 20 Oct 2010 12:33:41 -0700] INFO: Writing updated content for template[security] to /etc/apache2/conf.d/security
+[Wed, 20 Oct 2010 12:33:41 -0700] INFO: Writing updated content for template[/etc/apache2/ports.conf] to /etc/apache2/ports.conf
+[Wed, 20 Oct 2010 12:33:41 -0700] INFO: Backing up template[/etc/apache2/ports.conf] to /var/chef/backup/etc/apache2/ports.conf.chef-20101020123341
+[Wed, 20 Oct 2010 12:33:41 -0700] INFO: Writing updated content for template[/etc/apache2/sites-available/default] to /etc/apache2/sites-available/default
+[Wed, 20 Oct 2010 12:33:41 -0700] INFO: Backing up template[/etc/apache2/sites-available/default] to /var/chef/backup/etc/apache2/sites-available/default.chef-20101020123341
+[Wed, 20 Oct 2010 12:33:41 -0700] INFO: Writing updated content for template[/etc/apache2/mods-available/alias.conf] to /etc/apache2/mods-available/alias.conf
+[Wed, 20 Oct 2010 12:33:41 -0700] INFO: Backing up template[/etc/apache2/mods-available/alias.conf] to /var/chef/backup/etc/apache2/mods-available/alias.conf.chef-20101020123341
+[Wed, 20 Oct 2010 12:33:41 -0700] INFO: Writing updated content for template[/etc/apache2/mods-available/mime.conf] to /etc/apache2/mods-available/mime.conf
+[Wed, 20 Oct 2010 12:33:41 -0700] INFO: Backing up template[/etc/apache2/mods-available/mime.conf] to /var/chef/backup/etc/apache2/mods-available/mime.conf.chef-20101020123341
+[Wed, 20 Oct 2010 12:33:41 -0700] INFO: Writing updated content for template[/etc/apache2/mods-available/setenvif.conf] to /etc/apache2/mods-available/setenvif.conf
+[Wed, 20 Oct 2010 12:33:41 -0700] INFO: Backing up template[/etc/apache2/mods-available/setenvif.conf] to /var/chef/backup/etc/apache2/mods-available/setenvif.conf.chef-20101020123341
+: stdout
+[0K[web1] [Wed, 20 Oct 2010 12:33:42 -0700] INFO: Ran execute[disable-default-site] successfully
+: stdout
+[0K[web1] [Wed, 20 Oct 2010 12:33:42 -0700] INFO: Ran execute[a2enmod rewrite] successfully
+[Wed, 20 Oct 2010 12:33:42 -0700] INFO: Writing updated content for template[/etc/apache2/mods-available/deflate.conf] to /etc/apache2/mods-available/deflate.conf
+[Wed, 20 Oct 2010 12:33:42 -0700] INFO: Backing up template[/etc/apache2/mods-available/deflate.conf] to /var/chef/backup/etc/apache2/mods-available/deflate.conf.chef-20101020123342
+: stdout
+[0K[web1] [Wed, 20 Oct 2010 12:33:42 -0700] INFO: Ran execute[a2enmod headers] successfully
+[Wed, 20 Oct 2010 12:33:42 -0700] INFO: Writing updated content for template[/etc/apache2/sites-available/project.conf] to /etc/apache2/sites-available/project.conf
+: stdout
+[0K[web1] [Wed, 20 Oct 2010 12:33:42 -0700] INFO: Ran execute[a2ensite project.conf] successfully
+: stdout
+[0K[web1] [Wed, 20 Oct 2010 12:33:44 -0700] INFO: service[apache2]: restarted successfully
+[Wed, 20 Oct 2010 12:33:44 -0700] INFO: template[apache2.conf] sending restart action to service[apache2] (delayed)
+[Wed, 20 Oct 2010 12:33:44 -0700] INFO: template[security] not sending restart action to service[apache2] (delayed), as it's already been queued
+[Wed, 20 Oct 2010 12:33:44 -0700] INFO: template[/etc/apache2/ports.conf] not sending restart action to service[apache2] (delayed), as it's already been queued
+[Wed, 20 Oct 2010 12:33:44 -0700] INFO: template[/etc/apache2/sites-available/default] not sending restart action to service[apache2] (delayed), as it's already been queued
+[Wed, 20 Oct 2010 12:33:44 -0700] INFO: template[/etc/apache2/mods-available/alias.conf] not sending restart action to service[apache2] (delayed), as it's already been queued
+[Wed, 20 Oct 2010 12:33:44 -0700] INFO: template[/etc/apache2/mods-available/mime.conf] not sending restart action to service[apache2] (delayed), as it's already been queued
+[Wed, 20 Oct 2010 12:33:44 -0700] INFO: template[/etc/apache2/mods-available/setenvif.conf] not sending restart action to service[apache2] (delayed), as it's already been queued
+: stdout
+[0K[web1] [Wed, 20 Oct 2010 12:33:44 -0700] INFO: service[apache2]: reloaded successfully
+[Wed, 20 Oct 2010 12:33:44 -0700] INFO: execute[disable-default-site] sending reload action to service[apache2] (delayed)
+: stdout
+[0K[web1] [Wed, 20 Oct 2010 12:33:46 -0700] INFO: service[apache2]: restarted successfully
+[Wed, 20 Oct 2010 12:33:46 -0700] INFO: execute[a2enmod rewrite] sending restart action to service[apache2] (delayed)
+[Wed, 20 Oct 2010 12:33:46 -0700] INFO: template[/etc/apache2/mods-available/deflate.conf] not sending restart action to service[apache2] (delayed), as it's already been queued
+[Wed, 20 Oct 2010 12:33:46 -0700] INFO: execute[a2enmod headers] not sending restart action to service[apache2] (delayed), as it's already been queued
+[Wed, 20 Oct 2010 12:33:46 -0700] INFO: execute[a2ensite project.conf] not sending restart action to service[apache2] (delayed), as it's already been queued
+[Wed, 20 Oct 2010 12:33:46 -0700] INFO: Chef Run complete in 46.902953 seconds
+[Wed, 20 Oct 2010 12:33:46 -0700] INFO: Running report handlers
+[Wed, 20 Oct 2010 12:33:46 -0700] INFO: Report handlers complete
+: stdout
